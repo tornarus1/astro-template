@@ -29,15 +29,15 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command          | Action                                            |
-| :--------------- | :------------------------------------------------ |
-| `pnpm install`   | Installs dependencies                             |
-| `pnpm dev`       | Starts local dev server at `localhost:4321`       |
-| `pnpm build`     | Builds your production site to `./dist/`          |
-| `pnpm preview`   | Previews your build locally                       |
-| `pnpm astro ...` | Runs CLI commands like `astro add`, `astro check` |
-| `pnpm fmt`       | Runs `prettier --check` on project root           |
-| `pnpm lint`      | Runs `oxlint --type-aware` on project root        |
+| Command          | Action                                               |
+| :--------------- | :--------------------------------------------------- |
+| `pnpm install`   | Installs dependencies                                |
+| `pnpm dev`       | Starts local dev server at `localhost:4321`          |
+| `pnpm build`     | Builds your production site to `./dist/`             |
+| `pnpm preview`   | Previews your build locally                          |
+| `pnpm astro ...` | Runs CLI commands like `astro add`, `astro check`    |
+| `pnpm fmt`       | Runs `prettier --check` on project root              |
+| `pnpm lint`      | Runs `oxlint --type-aware && eslint` on project root |
 
 ## 👀 Want to learn more?
 

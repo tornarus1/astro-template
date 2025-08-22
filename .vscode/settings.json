@@ -1,5 +1,8 @@
 {
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+
+  // We use eslint only for Astro files since oxlint handles the rest.
+  "eslint.validate": ["astro"]
 }

@@ -88,6 +88,15 @@
     "typescript/consistent-type-definitions": ["error", "type"],
     "unicorn/no-nested-ternary": "off" // similar to `eslint/no-nested-ternary`
   },
+  "overrides": [
+    {
+      "files": ["astro.config.mjs", "eslint.config.js"],
+      "rules": {
+        "import/no-default-export": "off",
+        "import/no-named-as-default-member": "off"
+      }
+    }
+  ],
   "settings": {
     "jsx-a11y": {
       "polymorphicPropName": null,
