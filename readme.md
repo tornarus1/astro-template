@@ -1,27 +1,18 @@
-# Astro Starter Kit: Minimal
+# Astro Starter Kit
 
 ```sh
-pnpm create astro@latest -- --template minimal
+pnpm create astro@latest -- --template tornarus1/astro-template
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Basic Astro 5 project template with TS, Prettier, and Oxlint/ESlint set up OOTB.
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+The project structure is similar to that of a default minimal Astro project, but
+with the extra `prettier` and `oxlint`/`eslint` config files.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
+is exposed as a route based on its file name.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
@@ -29,16 +20,21 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 All commands are run from the root of the project, from a terminal:
 
-| Command          | Action                                               |
-| :--------------- | :--------------------------------------------------- |
-| `pnpm install`   | Installs dependencies                                |
-| `pnpm dev`       | Starts local dev server at `localhost:4321`          |
-| `pnpm build`     | Builds your production site to `./dist/`             |
-| `pnpm preview`   | Previews your build locally                          |
-| `pnpm astro ...` | Runs CLI commands like `astro add`, `astro check`    |
-| `pnpm fmt`       | Runs `prettier --check` on project root              |
-| `pnpm lint`      | Runs `oxlint --type-aware && eslint` on project root |
+| Command            | Action                                        |
+| :----------------- | :-------------------------------------------- |
+| `pnpm install`     | Installs dependencies                         |
+| `pnpm dev`         | Starts local dev server at `localhost:4321`   |
+| `pnpm build`       | Builds your production site to `./dist/`      |
+| `pnpm preview`     | Previews your build locally                   |
+| `pnpm astro <cmd>` | Runs commands like `astro add`, `astro check` |
+| `pnpm fmt`         | Runs `prettier --check`                       |
+| `pnpm lint`        | Runs `oxlint --type-aware && eslint`          |
 
-## 👀 Want to learn more?
+## 👀 Learn more
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [Astro's docs](https://docs.astro.build) to learn more.
+
+## License
+
+The template code is licensed under the terms of the [Apache License (Version 2.0)](./LICENSE).
+Remember to adjust the license of your own project.
