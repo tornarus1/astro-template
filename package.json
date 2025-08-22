@@ -12,7 +12,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "fmt": "prettier . --check"
+    "fmt": "prettier . --check",
+    "lint": "oxlint --report-unused-disable-directives --type-aware"
   },
   "dependencies": {
     "astro": "^5.13.2"
@@ -21,6 +22,8 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/ts-plugin": "^1.10.4",
     "@ianvs/prettier-plugin-sort-imports": "^4.6.2",
+    "oxlint": "^1.12.0",
+    "oxlint-tsgolint": "^0.0.4",
     "prettier": "^3.6.2",
     "prettier-plugin-astro": "^0.14.1",
     "typescript": "^5.9.2"

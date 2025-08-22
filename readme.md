@@ -37,6 +37,7 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm preview`   | Previews your build locally                       |
 | `pnpm astro ...` | Runs CLI commands like `astro add`, `astro check` |
 | `pnpm fmt`       | Runs `prettier --check` on project root           |
+| `pnpm lint`      | Runs `oxlint --type-aware` on project root        |
 
 ## 👀 Want to learn more?
 

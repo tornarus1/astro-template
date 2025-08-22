@@ -1,0 +1,117 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "import",
+    "jsx-a11y",
+    "oxc",
+    "react",
+    "react-perf",
+    "typescript",
+    "unicorn"
+  ],
+  "categories": {
+    "correctness": "error",
+    "perf": "error",
+    "suspicious": "error",
+    "pedantic": "error",
+    "restriction": "error",
+    "style": "error"
+  },
+  "rules": {
+    // "correctness" category rule overrides
+    "eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "after-used",
+        "destructuredArrayIgnorePattern": "^_",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "react/exhaustive-deps": "warn",
+
+    // "suspicious" category rule overrides
+    "react/react-in-jsx-scope": "off",
+
+    // "pedantic" category rule overrides
+    "eslint/max-nested-callbacks": ["error", { "max": 2 }],
+
+    // "restriction" category rule overrides
+    "eslint/default-case": "off",
+    "eslint/no-empty-function": ["error", { "allow": ["privateConstructors"] }],
+    "eslint/no-undefined": "off",
+    "eslint/no-unused-expressions": "off",
+    "import/unambiguous": "off",
+    "oxc/no-async-await": "off",
+    "oxc/no-optional-chaining": "off",
+    "oxc/no-rest-spread-properties": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".jsx", ".tsx"] }
+    ],
+    "typescript/explicit-function-return-type": "off",
+    "typescript/explicit-module-boundary-types": "off",
+
+    // "style" category rule overrides
+    "eslint/func-style": [
+      "error",
+      "declaration",
+      { "allowArrowFunctions": true }
+    ],
+    "eslint/guard-for-in": "off",
+    "eslint/id-length": "off",
+    "eslint/init-declarations": "off",
+    "eslint/no-labels": ["error", { "allowLoop": true }],
+    "eslint/no-magic-numbers": [
+      "warn",
+      {
+        "detectObjects": true,
+        "ignore": [-1, 0, 1, 100],
+        "ignoreArrayIndexes": true,
+        "ignoreClassFieldInitialValues": true,
+        "ignoreEnums": true,
+        "ignoreNumericLiteralTypes": true,
+        "ignoreTypeIndexes": true
+      }
+    ],
+    "eslint/no-nested-ternary": "warn",
+    "eslint/no-ternary": "off",
+    "eslint/prefer-destructuring": "off",
+    "eslint/sort-imports": "off",
+    "eslint/sort-keys": "off",
+    "import/consistent-type-specifier-style": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-curly-brace-presence": [
+      "error",
+      { "propElementValues": "always" }
+    ],
+    "react/no-set-state": "off",
+    "typescript/consistent-type-definitions": ["error", "type"],
+    "unicorn/no-nested-ternary": "off" // similar to `eslint/no-nested-ternary`
+  },
+  "settings": {
+    "jsx-a11y": {
+      "polymorphicPropName": null,
+      "components": {},
+      "attributes": {}
+    },
+    "react": {
+      "formComponents": [],
+      "linkComponents": []
+    },
+    "jsdoc": {
+      "ignorePrivate": false,
+      "ignoreInternal": false,
+      "ignoreReplacesDocs": true,
+      "overrideReplacesDocs": true,
+      "augmentsExtendsReplacesDocs": false,
+      "implementsReplacesDocs": false,
+      "exemptDestructuredRootsFromChecks": false,
+      "tagNamePreference": {}
+    }
+  },
+  "env": {
+    "builtin": true
+  },
+  "globals": {},
+  "ignorePatterns": []
+}
