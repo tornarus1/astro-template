@@ -33,6 +33,10 @@
     "react/react-in-jsx-scope": "off",
 
     // "pedantic" category rule overrides
+    "eslint/max-lines-per-function": [
+      "error",
+      { "max": 300, "skipComments": true }
+    ],
     "eslint/max-nested-callbacks": ["error", { "max": 2 }],
 
     // "restriction" category rule overrides
