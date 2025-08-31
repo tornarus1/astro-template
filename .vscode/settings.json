@@ -3,6 +3,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
+  "oxc.enable": true,
+  "oxc.lint.run": "onSave",
+  "oxc.typeAware": true,
+  "oxc.unusedDisableDirectives": "warn",
+
   // We use eslint only for Astro files since oxlint handles the rest.
   "eslint.validate": ["astro"]
 }
