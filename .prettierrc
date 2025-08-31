@@ -1,5 +1,9 @@
 {
-  "plugins": ["prettier-plugin-astro", "@ianvs/prettier-plugin-sort-imports"],
+  "plugins": [
+    "@prettier/plugin-oxc",
+    "prettier-plugin-astro",
+    "@ianvs/prettier-plugin-sort-imports"
+  ],
   "overrides": [
     {
       "files": "*.astro",

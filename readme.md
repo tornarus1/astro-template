@@ -28,13 +28,14 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm preview`     | Previews your build locally                   |
 | `pnpm astro <cmd>` | Runs commands like `astro add`, `astro check` |
 | `pnpm fmt`         | Runs `prettier --check`                       |
+| `pnpm tsc`         | Runs `tsc` to do typechecking                 |
 | `pnpm lint`        | Runs `oxlint --type-aware && eslint`          |
 
 ## 👀 Learn more
 
 Feel free to check [Astro's docs](https://docs.astro.build) to learn more.
 
-## License
+## Licence
 
-The template code is licensed under the terms of the [Apache License (Version 2.0)](./LICENSE).
-Remember to adjust the license of your own project.
+The template code is licensed under the terms of the [Apache License Version 2.0](./LICENSE).
+Remember to adjust the licence of your own project.
