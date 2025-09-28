@@ -38,6 +38,10 @@
       { "max": 300, "skipComments": true }
     ],
     "eslint/max-nested-callbacks": ["error", { "max": 2 }],
+    "import/max-dependencies": [
+      "error",
+      { "max": 25, "ignoreTypeImports": true }
+    ],
 
     // "restriction" category rule overrides
     "eslint/default-case": "off",
