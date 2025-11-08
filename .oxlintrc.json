@@ -87,6 +87,7 @@
     "eslint/sort-imports": "off",
     "eslint/sort-keys": "off",
     "import/consistent-type-specifier-style": "off",
+    "import/no-named-export": "off",
     "import/prefer-default-export": "off",
     "react/jsx-curly-brace-presence": [
       "error",
@@ -105,6 +106,11 @@
       }
     }
   ],
+  "ignorePatterns": [],
+  "globals": {},
+  "env": {
+    "builtin": true
+  },
   "settings": {
     "jsx-a11y": {
       "polymorphicPropName": null,
@@ -125,10 +131,5 @@
       "exemptDestructuredRootsFromChecks": false,
       "tagNamePreference": {}
     }
-  },
-  "env": {
-    "builtin": true
-  },
-  "globals": {},
-  "ignorePatterns": []
+  }
 }
