@@ -59,6 +59,7 @@ formatter = { command = "pnpm", args = ["prettier", "--parser", "typescript"] }
 language-servers = [
   "typescript-language-server",
   "vscode-eslint-language-server",
+  "oxlint-language-server",
 ]
 
 [[language]]
@@ -68,6 +69,7 @@ formatter = { command = "pnpm", args = ["prettier", "--parser", "typescript"] }
 language-servers = [
   "typescript-language-server",
   "vscode-eslint-language-server",
+  "oxlint-language-server",
 ]
 
 [[language]]
@@ -77,6 +79,7 @@ formatter = { command = "pnpm", args = ["prettier", "--parser", "typescript"] }
 language-servers = [
   "typescript-language-server",
   "vscode-eslint-language-server",
+  "oxlint-language-server",
 ]
 
 [[language]]
@@ -86,4 +89,9 @@ formatter = { command = "pnpm", args = ["prettier", "--parser", "typescript"] }
 language-servers = [
   "typescript-language-server",
   "vscode-eslint-language-server",
+  "oxlint-language-server",
 ]
+
+[language-server.oxlint-language-server]
+command = "pnpm"
+args = ["oxlint", "--lsp"]

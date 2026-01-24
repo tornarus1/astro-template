@@ -11,39 +11,55 @@
   ],
   "categories": {
     "correctness": "error",
-    "perf": "error",
-    "suspicious": "error",
     "pedantic": "error",
+    "perf": "error",
     "restriction": "error",
-    "style": "error"
+    "style": "error",
+    "suspicious": "error"
   },
   "rules": {
-    // "correctness" category rule overrides
-    "eslint/no-unused-vars": [
-      "error",
-      {
-        "args": "after-used",
-        "destructuredArrayIgnorePattern": "^_",
-        "ignoreRestSiblings": true
-      }
-    ],
+    // "correctness" overrides.
     "react/exhaustive-deps": "warn",
+    "typescript/no-floating-promises": ["error", { "ignoreIIFE": true }],
 
-    // "suspicious" category rule overrides
-    "react/react-in-jsx-scope": "off",
-
-    // "pedantic" category rule overrides
+    // "pedantic" overrides.
     "eslint/max-lines-per-function": [
       "error",
-      { "max": 300, "skipComments": true }
+      { "max": 150, "skipBlankLines": true, "skipComments": true }
     ],
     "eslint/max-nested-callbacks": ["error", { "max": 2 }],
+    "eslint/require-await": "off",
     "import/max-dependencies": [
       "error",
       { "max": 25, "ignoreTypeImports": true }
     ],
+    "typescript/no-confusing-void-expression": [
+      "error",
+      { "ignoreArrowShorthand": true }
+    ],
+    "typescript/no-misused-promises": [
+      "error",
+      { "checksVoidReturn": { "attributes": false } }
+    ],
+    "typescript/strict-boolean-expressions": [
+      "error",
+      { "allowNullableBoolean": true, "allowNullableString": true }
+    ],
+    "typescript/switch-exhaustiveness-check": [
+      "error",
+      {
+        "allowDefaultCaseForExhaustiveSwitch": false,
+        "considerDefaultExhaustiveForUnions": true
+      }
+    ],
+    "unicorn/no-useless-undefined": "off",
 
-    // "restriction" category rule overrides
+    // "perf" overrides.
+    "react_perf/jsx-no-new-array-as-prop": "off",
+    "react_perf/jsx-no-new-function-as-prop": "off",
+
+    // "restriction" overrides.
+    "eslint/class-methods-use-this": "off",
     "eslint/default-case": "off",
     "eslint/no-empty-function": ["error", { "allow": ["privateConstructors"] }],
     "eslint/no-undefined": "off",
@@ -54,33 +70,23 @@
     "oxc/no-rest-spread-properties": "off",
     "react/jsx-filename-extension": [
       "error",
-      { "extensions": [".jsx", ".tsx"] }
+      { "allow": "as-needed", "extensions": ["jsx", "tsx"] }
     ],
+    "react/only-export-components": "off",
     "typescript/explicit-function-return-type": "off",
     "typescript/explicit-module-boundary-types": "off",
 
-    // "style" category rule overrides
+    // "style" overrides.
+    "eslint/capitalized-comments": "off",
     "eslint/func-style": [
       "error",
       "declaration",
       { "allowArrowFunctions": true }
     ],
-    "eslint/guard-for-in": "off",
     "eslint/id-length": "off",
     "eslint/init-declarations": "off",
     "eslint/no-labels": ["error", { "allowLoop": true }],
-    "eslint/no-magic-numbers": [
-      "warn",
-      {
-        "detectObjects": true,
-        "ignore": [-1, 0, 1, 100],
-        "ignoreArrayIndexes": true,
-        "ignoreClassFieldInitialValues": true,
-        "ignoreEnums": true,
-        "ignoreNumericLiteralTypes": true,
-        "ignoreTypeIndexes": true
-      }
-    ],
+    "eslint/no-magic-numbers": "off",
     "eslint/no-nested-ternary": "warn",
     "eslint/no-ternary": "off",
     "eslint/prefer-destructuring": "off",
@@ -93,9 +99,14 @@
       "error",
       { "propElementValues": "always" }
     ],
+    "react/jsx-props-no-spreading": "off",
     "react/no-set-state": "off",
     "typescript/consistent-type-definitions": ["error", "type"],
-    "unicorn/no-nested-ternary": "off" // similar to `eslint/no-nested-ternary`
+    "unicorn/no-nested-ternary": "off", // Similar to `eslint/no-nested-ternary`.
+    "unicorn/switch-case-braces": ["error", "avoid"],
+
+    // "suspicious" overrides.
+    "react/react-in-jsx-scope": "off"
   },
   "overrides": [
     {
