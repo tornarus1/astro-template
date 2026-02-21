@@ -6,7 +6,7 @@ pnpm create astro@latest -- --template tornarus1/astro-template
 
 Basic Astro 5 project template with TS, Prettier, and Oxlint/ESlint set up OOTB.
 
-## 🚀 Project Structure
+## Project Structure
 
 The project structure is similar to that of a default minimal Astro project, but
 with the extra `prettier` and `oxlint`/`eslint` config files.
@@ -16,7 +16,7 @@ is exposed as a route based on its file name.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## 🧞 Commands
+## Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -29,7 +29,7 @@ All commands are run from the root of the project, from a terminal:
 | `pnpm astro <cmd>` | Runs commands like `astro add`, `astro check`       |
 | `pnpm check`       | Runs a formatting check, type-checking, and linting |
 
-## 👀 Learn more
+## Learn more
 
 Feel free to check [Astro's docs](https://docs.astro.build) to learn more.
 
